@@ -7,4 +7,6 @@ npm install;
 
 node index.js;
 
+wait for it...
+
 open node-turf-obs/index.html in browser.
