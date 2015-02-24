@@ -1,0 +1,22 @@
+{
+  "name": "node-turf-obs",
+  "version": "1.0.0",
+  "description": "Project to create hexbin output of global observations using TurfJS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvrousseau/node-turf-obs.git"
+  },
+  "author": "Jordan Rousseau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvrousseau/node-turf-obs/issues"
+  },
+  "homepage": "https://github.com/jvrousseau/node-turf-obs",
+  "dependencies": {
+    "turf": "^1.4.0"
+  }
+}

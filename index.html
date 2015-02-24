@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>current-obs</title>
+  <script>L_PREFER_CANVAS=true</script>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+  <style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  #description { padding-bottom: 15px; }
+  </style>
+</head>
+<body>
+<div id='map'></div>
+</div>
+<script src='hex-obs.js'></script>
+<script>
+var map = L.mapbox.map('map', 'jvrousseau.map-bzxtnr7p', { zoomControl: false }).setView([37,-95,], 4);
+
+var layerGroup = L.layerGroup().addTo(map);
+
+var hex = L.geoJson(hexgrid).eachLayer(function(l) {
+  l.setStyle(l.feature.properties);
+}).addTo(layerGroup);
+</script>
+</body>
+</html>
