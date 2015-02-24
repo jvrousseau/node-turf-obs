@@ -15,12 +15,12 @@
   </style>
 </head>
 <body>
-<div id='map'></div>
+<div id='map' class='dark'></div>
 </div>
 <script src='hex-obs.js'></script>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoianZyb3Vzc2VhdSIsImEiOiJYYUNlcVRZIn0.lp0867Jn5ynlj72kMwICSA';
-var map = L.mapbox.map('map', 'jvrousseau.map-bzxtnr7p').setView([30, 0], 2);
+var map = L.mapbox.map('map', 'jvrousseau.map-bzxtnr7p', { zoomControl: true }).setView([30, 0], 2);
 map.scrollWheelZoom.disable();
 var layerGroup = L.layerGroup().addTo(map);
 
