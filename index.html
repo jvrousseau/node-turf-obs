@@ -21,7 +21,7 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoianZyb3Vzc2VhdSIsImEiOiJYYUNlcVRZIn0.lp0867Jn5ynlj72kMwICSA';
 var map = L.mapbox.map('map', 'jvrousseau.map-bzxtnr7p', { zoomControl: true }).setView([30, 0], 2);
-map.scrollWheelZoom.disable();
+
 var layerGroup = L.layerGroup().addTo(map);
 
 var hex = L.geoJson(hexgrid).eachLayer(function(l) {
